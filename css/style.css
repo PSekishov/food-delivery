@@ -91,3 +91,159 @@ span.shopping-counter{
     border-radius: 50%;
     display: block;
 }
+
+/************* SLIDER ****************/
+
+.slide{
+    border-radius: 20px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    padding: 100px;
+    position: relative; /* это для before*/
+    overflow: hidden; /* это для before*/
+}
+
+.slide-text-light{
+    background: silver;
+    color: #fff;
+}
+
+.slide-content{
+    max-width: 400px;
+    position: relative; /* это для before*/
+}
+
+.slide-title{
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 51px;
+}
+
+.slide-text{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 30px;
+}
+
+.button{
+    border-radius:25px;
+    text-decoration: none;
+    padding: 11px 50px;
+    display: inline-block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.button-primary{
+    background: #F47322;
+    color: #fff;
+} 
+
+.button-default{
+    background: #fff;
+    color: #5F5F61;
+}
+
+.slide-summer{
+    /* background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url(../images/summer.png); */ /* это тоже работает только без before (запись в одну строчку кода!!!)*/
+    background-image: url('../images/summer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide-summer::before{
+    content: '';
+    position: absolute;
+    top: 0; 
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background:rgba(0,0,0, .5);  
+}
+
+/*********** PROMO ***********/
+
+.promo{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    padding: 32px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    max-width: 570px;
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.card::before{
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0; 
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.card-text-light{
+    color: #fff;
+}
+
+.card-title{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 23px;
+    margin: 4px 0 21px 0;
+}
+
+.card-description{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    max-width: 200px;
+}
+
+.card-price{
+    display:block;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 23px; 
+    margin-bottom: 8px;
+}
+
+.card-delivery{
+    display:block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 25px;
+}
+
+.card-image{
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    z-index: -2;
+}
