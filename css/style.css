@@ -175,6 +175,7 @@ span.shopping-counter{
     padding: 50px 0;
     display: flex;
     justify-content: space-between;
+    margin: -20px;
 }
 
 .card{
@@ -187,7 +188,9 @@ span.shopping-counter{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-grow: 1;
+    /* flex-grow: 1; */
+    flex: 50%;
+    margin: 20px;
 }
 
 .card::before{
@@ -246,4 +249,301 @@ span.shopping-counter{
     z-index: -1;
     object-fit: cover;
     z-index: -2;
+}
+
+/*********** Delivery-Week ********************/
+
+.delivery-week{
+    padding: 100px 0;
+}
+
+
+.section-title{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 23px;
+    margin-top: 0;
+    margin-bottom: 47px;
+}
+
+.delivery-cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.delivery-card{
+    position: relative;
+    width: 275px;
+    height: 182px;
+    border-radius: 18px;
+    overflow: hidden;
+    margin: 15px;
+}
+
+.delivery-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+}
+
+.delivery-tag{
+    position: absolute;
+    top: 16px;
+    left: 10px;
+    border-radius: 30px;
+    color: #49494F;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    padding: 5px 10px;
+}
+
+.tag-healf{
+    background: #D0FD89;
+}
+
+.tag-vegetable{
+    background: #AEBC41;
+    color: #fff;
+}
+
+.tag-maet{
+    background: #B86B78;
+    color: #fff;
+}
+
+.tag-bird{
+    background: #D68334;
+    color: #fff;
+}
+
+.tag-fish{
+    background: #CD6255;
+    color: #fff;
+}
+
+.tag-kids{
+    background: #FFFDBF;
+}
+
+.tag-parent{
+    background: #F6FDC8;
+}
+
+.tag-holiday{
+    background: #FEF7FE;
+}
+
+/*********** Section Grey Category**********************/
+
+.section-grey{
+    background: #F6F6F6;
+    margin-bottom: 100px;
+}
+
+.tabs-content{
+    display: flex;
+    margin: -15px;
+    flex-wrap: wrap;
+}
+
+.tabs{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 62px;
+}
+
+.tabs-item{
+    list-style: none;
+}
+
+.tabs-link{
+    font-size: 20px;
+    line-height: 23px;
+    color: #49494F;
+    text-decoration: none;
+    margin-right: 58px;
+}
+
+.tabs-link.active{
+    color: #F37321;
+}
+
+.category{
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.tabs-card{
+    margin: 15px;
+    max-width: 270px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+}
+
+.tabs-image{
+    max-width: 100%;
+}
+
+.tabs-card-content{
+    padding: 23px;
+}
+
+.tabs-title{
+    margin-top: 0;
+    margin-bottom: 13px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.tabs-description{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    color: #B9B9BE;
+}
+
+.tabs-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tabs-price{
+    display: block;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 23px;
+    color: #4B4B51;
+    margin-bottom: 5px;
+}
+
+.tabs-weight{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    color: #AAAAB1;
+}
+
+.button-outline{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    background: transparent;
+    color: #F37321;
+    padding: 15px 25px;
+    border: 2px solid #F37321;
+    border-radius: 33px;
+    cursor: pointer;
+}
+
+.button-center{
+    display: block;
+    width: 315px;
+    height: 50px;
+    margin: auto;
+    margin-top: 62px;
+    margin-bottom: 60px;
+}
+
+/************ Service ****************/
+
+.service{
+    margin-bottom: 200px;
+}
+
+.service-card-content{
+    width:223px;
+    height: 88px;
+    margin: auto;
+}
+
+.sercice-title{
+    margin-bottom: 52px;
+}
+
+.service-cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.service-card{
+    width: 270px;
+    height: 296px;
+    background: #FFFFFF;
+    border: 1px solid #E9E9E9;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+    overflow: hidden;
+    margin: 15px;
+}
+
+.service-image{
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 34px;
+}
+
+.service-card-title{
+    width: 188px;
+    height: 46px; 
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 13px;
+}
+
+.service-card-description{
+    /* margin: 0 24px 24px 24px; */
+    font-size: 14px;
+    line-height: 22px;
+    color: #49494F;
+    text-align: center;
+    /* padding: 0px; */
+}
+
+/************ Footer ******************/
+
+.footer{
+    padding: 40px 0;
+    background: #F6F6F6;
+}
+
+.footer-logo{
+    width: 205px;
+    height: 101px;
+    margin-right: 50px;
+}
+
+.footer-wrapper{
+    display: flex;
+    align-items:center;
+}
+
+.footer-link{
+    font-size: 16px;
+    line-height: 23px;
+    text-decoration-line: underline;
+    color: #000;
+    margin-right: 50px;
+}
+
+.social-links{
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.social-link{
+    margin-left: 20px;
+    text-decoration: none;
 }
